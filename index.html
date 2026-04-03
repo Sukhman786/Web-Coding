@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <header class="header">
+
+        <a href="#home" class="logo">
+            <span>Gaming </span>Bar
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#explore">Explore</a>
+            <a href="#game1">Game 1</a>
+            <a href="#game2">Game 2</a>
+            <a href="#game3">Game 3</a>
+            <a href="#contactji">Contact</a>
+        </nav>
+     </header>
+
+     <section class="home" id="home">
+        
+        <div class="home-content">
+            <h1>Hi, <span>Player</span></h1>
+            <h3>It's a <span>Gaming Bar</span></h3>
+            <p>Welcome to the digital playground, a high-octane space built within the neon grid. I build high-performance web experiences and interactive games that push the boundaries of the browser, blending pixel-perfect design with seamless logic. The system is online and fully synchronized—ready to start the session?</p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1JN4CTipy3/" target="_blank">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://wa.me/918284928781" target="_blank">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/sukhman.jit.singh?igsh=aHcyZ3Ftdm1xZDR2">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a target="_blank" href="https://www.snapchat.com/add/sukhmaneditz?share_id=Ld_nAdrLS-s&locale=en-US">
+                    <i class="bx bxl-snapchat"></i>
+                </a>
+            </div>
+            <div class="btn-group">
+                <a href="#explore" class="btn">Explore</a>
+                <a target="_blank" href="https://chat.whatsapp.com/L3QjcCRAT87LUQqxsHtMg7?mode=hqctcla" class="btn">Join Us</a>
+            </div>
+
+        </div>
+        <div class="home-img">
+            <img src="logo.jpeg" alt="">
+        </div>
+
+     </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about">        
+        <div class="about-container">
+
+            <div class="about-content">
+                <h1><span>Enter the </span>Grid</h1>
+                <h3>Crafted for Players, <span>by Players.</span></h3>
+            </div>
+
+            <div class="about-video">
+                <video class="videos" width="100%" height="auto" autoplay muted loop playsinline>
+                    <source src="webProjectVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video class="videos" width="100%" height="auto" autoplay muted loop        playsinline>
+                    <source src="webProjectVideo2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+</section>
+
+    <!-- EXPLORE SECTION -->
+
+    <section class="explore" id="explore">
+        <h2 class="heading">Explore <span>Gaming Bar</span></h2>
+        <p>Step into this World of Games and test your skills across three games built entirely with Pure JavaScript logic.</p>
+
+        <div class="explore-container">
+            
+            <a href="#game1">
+                <div class="explore-box">
+                    <div class="explore-info">
+                        <i class="bx bx-game"></i>
+                        <h4>Stone/Paper/Scissor</h4>
+                        <p>Face off against the machine in a high-stakes battle of Stone, Paper, Scissors. It's a classic test of intuition and luck, built with pure JavaScript logic and wrapped in a sleek neon interface. The system is randomized—can you outsmart the grid and secure the win?</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#game2">
+                <div class="explore-box">
+                    <div class="explore-info">
+                        <i class="bx bx-brain"></i>
+                        <h4>Number Guessing</h4>
+                        <p>Challenge the system in a high-stakes race of Number Guessing. It's a classic test of logic and precision, built with pure JavaScript logic and wrapped in a sleek neon interface. The target is hidden—can you crack the code and secure the win before your attempts run out?</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#game3">
+                <div class="explore-box">
+                    <div class="explore-info">
+                        <i class="bx bx-grid-alt"></i>
+                        <h4>Card Matching</h4>
+                        <p>Test your focus in the high-stakes memory of Card Match. It's a classic test of recall and speed, built with pure JavaScript logic and wrapped in a sleek neon interface. The tiles are hidden—can you sync the data and secure the win before the system resets?</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- GAME 1 SECTION -->
+
+    <section class="game1" id="game1">
+        <div class="game1-container">
+            <h2 class="heading2">Rock Paper Scissor</h2>
+
+            <div class="option-box">
+                <h3><u>Select your Option</u></h3>
+
+                <div class="option">
+                    <div class="Rock"><img src="./RoPaSci_Images/Rock.png" alt="Rock"></div>
+                    <div class="Paper"><img src="./RoPaSci_Images/Paper.png" alt="Paper"></div>
+                    <div class="Scissors"><img src="./RoPaSci_Images/Scissors.png" alt="Scissors"></div>
+                </div>
+            </div>
+
+            <div class="player-choices">
+                <h3>Player <span>v/s</span> Computer</h3>
+
+                <div class="player-choice">
+                    <img src="Rock.png" alt="">
+                </div>
+
+                <div class="computer-choice">
+                    <img src="Rock.png" alt="">
+                </div>
+            </div>
+
+            <div class="result-box">
+                <h3>Congrats, You Won! &#x1F389;</h3>
+                <button class="play-again">&#x21BB; Play Again</button>
+            </div>
+
+            <div class="score-box">
+
+                <div class="won">
+                    <h3>Won : <span>0</span></h3>
+                </div>
+
+                <div class="lost">
+                    <h3>Lost : <span>0</span></h3>
+                </div>
+
+                <div class="draw">
+                    <h3>Draw : <span>0</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GAME 2 SECTION -->
+
+    <section class="game2" id="game2">
+        <div class="game2-container">
+            <div class="game2-container2">
+                <button type="button" class="btn-again">Play Again</button>
+                <p class="paraji">Between 1 and 100</p>
+            </div>
+            <h2>Number Guessing</h2>
+            <p class="hide-num">?</p>
+            <p class="msg">Start Guessing.......</p>
+
+            <div class="num-data">
+                <form>
+                    <input type="number" placeholder="Enter your Guess......" class="input-num">
+                    <button type="button" class="btn-check">Check Now!</button>
+                </form>
+
+                <div class="num-content">
+                    <p>Score: <span class="score">20</span></p>
+                    <p>High Score: <span class="high-score">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game 3 SECTION -->
+
+    <section class="game3" id="game3">
+        <h2><span>Card</span> Matching</h2>
+
+        <div class="game3-container">
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+            <div class="cardji back" onclick="clickingFun(this)"></div>
+        </div>
+
+        <div class="play-again-btn">
+            <pre class="score-card">Score :  <span class="card-score">20</span></pre>
+            <button class="play-again3" onclick="resetGame3(this)">&#x21BB; Reset</button>
+        </div>
+    </section>
+
+    <section class="contactji" id="contactji">
+        <div class="contact-container">
+            <form class="form-contact">
+                <h1 class="h1-contact">Contact <span>Us</span></h1>
+
+                <input class="input-form" type="text" placeholder="Name" required>
+                <br>
+
+                <input class="input-form" type="text" placeholder="Email" required>
+                <br>
+
+                <textarea class="input-form" name="msgInput" id="input-msg" placeholder="Enter Message" required></textarea>
+                <br>
+                
+                <button class="input-btn" type="submit">Send</button>
+
+                <div id="response-text" class="hidden-message">We will <span>contact you</span> soon!</div>   
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="social-icons">
+                <a href="https://www.facebook.com/share/1JN4CTipy3/" target="_blank">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://wa.me/918284928781" target="_blank">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/sukhman.jit.singh?igsh=aHcyZ3Ftdm1xZDR2" target="_blank">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a href="https://www.snapchat.com/add/sukhmaneditz?share_id=Ld_nAdrLS-s&locale=en-US" target="_blank">
+                    <i class="bx bxl-snapchat"></i>
+                </a>
+            </div>
+
+            <ul class="list">
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+
+                <li>
+                    <a href="#about">Services</a>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://chat.whatsapp.com/L3QjcCRAT87LUQqxsHtMg7?mode=hqctcla">About Us</a>
+                </li>
+
+                <li>
+                    <a href="#contactji">Contact</a>
+                </li>
+            </ul>
+
+            <pre class="copyright">
+                &copy; SUKHMAN    |   All Rights Reserved
+            </pre>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- audio tags for Game1 -->
+    <audio id="win" src="./win2.mp3" preload="auto"></audio>
+    <audio id="mario" src="./mario.mp3" preload="auto"></audio>
+    <audio id="shit" src="./shit.mp3" preload="auto"></audio>
+
+    <!-- audio tags for Game1 -->
+    <audio id="dora" src="./doraemon.mp3" preload="auto"></audio>
+
+</body>
+</html>
