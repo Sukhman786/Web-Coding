@@ -1044,6 +1044,10 @@ input:-webkit-autofill:focus {
         margin-bottom: 50px;
     }
 
+    .game1-container .player-choices div:nth-child(3){
+        left: 100px;
+    }
+
     .game1-container .player-choices.active div:nth-child(3){
         left: 20px;
     }
