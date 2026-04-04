@@ -1007,11 +1007,14 @@ input:-webkit-autofill:focus {
         padding: 0px 5px;
     }
 
-    .game1-container, .game2-container, .contact-container {
-        width: 90% !important;
-        margin-left: auto;
-        margin-right: auto;
+    .explore-box {
         height: auto;
+        width: 90%;
+    }
+
+    .game1-container, .game2-container, .contact-container {
+        width: 100% !important;
+        padding: 1rem;
     }
 
     .game2-container .num-data {
