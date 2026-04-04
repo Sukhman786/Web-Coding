@@ -1004,14 +1004,21 @@ input:-webkit-autofill:focus {
     }
 
     .explore-container {
-        grid-template-columns: 1fr;
-        padding: 0px 5px;
+        /* grid-template-columns: 1fr;
+        padding: 0px 5px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+        width: 100%;
     }
 
     .explore-box {
         height: auto;
         width: 100% !important;
-        padding: 1rem;
+        max-width: 350px;
+        margin: 0 auto;
     }
 
     .game1-container, .game2-container, .contact-container {
@@ -1019,9 +1026,34 @@ input:-webkit-autofill:focus {
         padding: 1rem;
     }
 
+    .game1-container .player-choices div{
+        width: 110px;
+        height: 150px;
+    }
+
+    .game1-container .player-choices div img{
+        height: 100px;
+        width: 110px;
+    }
+
+    .game1-container .player-choices h3{
+        font-size: 18px;
+    }
+
+    .game1-container .heading2{
+        margin-bottom: 50px;
+    }
+
+    .game2-container{
+        height: 430px !important;
+        /* padding-bottom: 1rem !important; */
+        padding-top: 2rem !important ;
+    }
+
     .game2-container .num-data {
         flex-direction: column;
         gap: 2rem;
+        margin-top: 2rem;
     }
 
     .game2-container .num-data form{
