@@ -1028,12 +1028,10 @@ input:-webkit-autofill:focus {
     .game1-container .player-choices div{
         width: 110px;
         height: 150px;
-        float: left;
-        left: 120px;
     }
 
-    .game1-container .player-choices div:nth-child(3){
-        left: -250px;
+    .game1-container .player-choices .computer-choice{
+        margin-right: 60px;
     }
 
     .game1-container .player-choices div img{
