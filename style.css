@@ -1031,6 +1031,10 @@ input:-webkit-autofill:focus {
         height: 150px;
     }
 
+    .game1-container .player-choices div:nth-child(3){
+        left: 150px;
+    }
+
     .game1-container .player-choices div img{
         height: 100px;
         width: 110px;
