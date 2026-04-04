@@ -903,17 +903,39 @@ input:-webkit-autofill:focus {
 /* For Tablets and smaller desktops */
 @media (max-width: 991px) {
     .header {
-        padding: 2rem 4%;
+        padding: 5rem 4%;
     }
+
+    .header .logo{
+        font-size: 2.3rem;
+    }
+
+    .navbar a{
+        font-size: 1.5rem;
+        margin: 50rem 1.5rem;
+    }
+
     section {
         padding: 10rem 4%;
     }
     .home {
-        gap: 2rem;
+        gap: 5rem;
     }
     .explore-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .explore-container a{
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .explore-container a .explore-box {
+        max-width: 369px; 
+        width: 100%;
+    }
+
     .game3-container{
         grid-template-columns: repeat(4, 80px);
         grid-template-rows: auto;
@@ -1024,6 +1046,12 @@ input:-webkit-autofill:focus {
         gap: 50px;
         justify-content: center;
         justify-items: center;
+    }
+
+    .game3-container .cardji:last-child{
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: center;
     }
 
     .game3 .play-again-btn {
