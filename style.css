@@ -1045,7 +1045,7 @@ input:-webkit-autofill:focus {
     }
 
     .game1-container .player-choices div:nth-child(3){
-        left: 100px;
+        right: 100px;
     }
 
     .game1-container .player-choices.active div:nth-child(3){
