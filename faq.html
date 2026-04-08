@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ - Gaming Bar</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: yellow;
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            background: #111;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid yellow;
+        }
+
+        .faq-question {
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: "+";
+            position: absolute;
+            right: 20px;
+            font-size: 20px;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "-";
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background: #222;
+            font-size: 14px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            text-decoration: none;
+            background: yellow;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+
+        .back-btn:hover {
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <div class="faq-question">What games are available?</div>
+        <div class="faq-answer">We offer popular PC and console games including multiplayer and story-based games.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What are your pricing plans?</div>
+        <div class="faq-answer">Pricing is based on hourly play and special packages. Contact us for details.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What are your opening hours?</div>
+        <div class="faq-answer">We are open daily from 10 AM to 10 PM.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Do you provide high-speed internet?</div>
+        <div class="faq-answer">Yes, we provide fast and stable internet for smooth gaming.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Can we come in groups?</div>
+        <div class="faq-answer">Yes! Groups are welcome and we also offer special discounts.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Do you host tournaments?</div>
+        <div class="faq-answer">Yes, we regularly organize gaming tournaments and events.</div>
+    </div>
+
+    <a href="index.html" class="back-btn">Back to Home</a>
+</div>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
