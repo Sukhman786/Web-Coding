@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Jquery Code</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                $("#p").text("You clicked the button!");
+                $("#imgji").fadeOut(5000);
+            });
+
+            $("#btn2").hover(function() {
+                $("#p").text("You hovered over the restart button!");
+                $("#imgji").fadeIn(5000);
+            });
+
+            $("a").dblclick(function(event) {
+                event.preventDefault();
+                alert("This type of Single clicks do not work on me.");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2 id="text">Hello! jQuery is working.</h2>
+    <p id="p">djcfsdjlfsdklfklsdnfgvsdkgnsdkgvskdf</p>
+    <p id="p2" >djcfsdjlfsdklfklsdnfgvsdkgnsdkgvskdf</p>
+    <img id="imgji" style="height:200px;" src="logo.jpeg">
+    <br><br>
+    <button id="btn">Click Me</button>
+    <button id="btn2">Restart</button>
+    <a href="https://www.google.com">googleee</a>
+</body>
+</html>
