@@ -6,15 +6,17 @@
         $(document).ready(function() {
             $("#btn").click(function() {
                 $("#p").text("Sukhman ji clicked the button!");
-                $("#imgji").fadeOut();
+                $(".p2").slideUp();
+                $("img").fadeOut();
             });
 
             $("#btn2").hover(function() {
                 $("#p").text("Sukhman ji hovered over the restart button!");
-                $("#imgji").fadeIn();
+                $(".p2").text("Again hovering over p2").slideDown();
+                $("img").fadeIn();
             });
 
-            $("a").dblclick(function(event) {
+            $("a").click(function(event) {
                 event.preventDefault();
                 alert("This type of Single clicks do not work on me.");
             });
@@ -24,8 +26,8 @@
 <body>
     <h1 id="text">Hello! Sukhman ji, how are you!!</h1>
     <p id="p">This is paragraph and it contains so many words but the fact is that this paragraph contains a word "paragraph".</p>
-    <p id="p2" >i don't know what should i write in this paragraph.</p>
-    <img id="imgji" style="height:200px;" src="logo.jpeg">
+    <p class="p2" >i don't know what should i write in this paragraph.</p>
+    <img style="height:200px;" src="logo.jpeg">
     <br><br>
     <button id="btn">Click Me</button>
     <button id="btn2">Restart</button>
