@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Iframe Target Example</title>
+    <style>
+        iframe {
+            border: 2px solid #333;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Click the link to load content in the box below</h2>
+
+    <a href="another-page.html" target="contentFrame">Open Another Page</a>
+
+    <br>
+
+    <iframe 
+        name="contentFrame"
+        width="600" 
+        height="400" 
+        title="Content display area">
+    </iframe>
+
+</body>
+</html>
